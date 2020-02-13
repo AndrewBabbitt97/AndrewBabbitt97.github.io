@@ -1,0 +1,47 @@
+﻿@page "/skills"
+@inject HttpClient _httpClient
+
+@if (_model != null)
+{
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center">
+        <div class="w-100">
+            <h2 class="mb-5">Skills</h2>
+            <div class="subheading mb-3">Programming Languages &amp; Tools</div>
+            <ul class="list-inline dev-icons">
+                @foreach (Models.Skill skill in _model.Where(s => !s.ShowDescription))
+                {
+                    <li class="list-inline-item resume-tooltip">
+                        <i class="@skill.Icon"></i>
+                        <p class="resume-tooltiptext resume-tooltip-top">@skill.Description</p>
+                    </li>
+                }
+            </ul>
+
+            <div class="subheading mb-3">Workflow</div>
+
+            <ul class="fa-ul mb-0">
+                @foreach (Models.Skill skill in _model.Where(s => s.ShowDescription))
+                {
+                    <li>
+                        <i class="@skill.Icon"></i>
+                        @skill.Description
+                    </li>
+                }
+            </ul>
+        </div>
+    </section>
+}
+else
+{
+    <Loader />
+}
+
+@code
+{
+    private List<Models.Skill> _model;
+
+    protected override async Task OnInitializedAsync()
+    {
+        _model = await _httpClient.GetJsonAsync<List<Models.Skill>>("api/skills.json");
+    }
+}

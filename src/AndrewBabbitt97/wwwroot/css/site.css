@@ -1,0 +1,96 @@
+﻿#preloader {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0);
+    background-image: url(../img/preloader.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#loader {
+    display: block;
+    margin: 0 auto;
+    content: url(../img/preloader.svg);
+}
+
+#preloader-text {
+    position: absolute;
+    top: 60%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+#blazor-error-ui[style="display: block;"] ~ .resume-section {
+    display: none !important;
+}
+
+section.error-section {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+    min-height: 100vmin;
+    max-width: 75rem;
+}
+
+section.loading-section {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+    min-height: 100vmin;
+}
+
+.social-icons a:hover {
+    background-color: #007acc;
+}
+
+.dev-icons .list-inline-item i:hover {
+    color: #007acc;
+}
+
+#sideNav .navbar-toggler:focus {
+    outline-color: #17a6ff;
+}
+
+.bg-primary {
+    background-color: #007acc !important;
+}
+
+.text-primary {
+    color: #007acc !important;
+}
+
+a {
+    color: #007acc;
+}
+
+a:active, a:focus, a:hover {
+    color: #005ebb;
+}
+
+.resume-tooltip {
+    position: relative;
+}
+
+.resume-tooltip .resume-tooltiptext {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    width: 120px;
+    text-align: center;
+    padding: 5px 0;
+    z-index: 1;
+    font-size: 1rem;
+}
+
+.resume-tooltip-top {
+    bottom: 103%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.resume-tooltip:hover .resume-tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}

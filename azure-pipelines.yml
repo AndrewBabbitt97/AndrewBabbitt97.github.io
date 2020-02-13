@@ -1,0 +1,50 @@
+trigger:
+- development
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- task: UseDotNet@2
+  displayName: Use .NET Core 3.1
+  inputs:
+    packageType: 'sdk'
+    version: '3.1.101'
+
+- task: DotNetCoreCLI@2
+  displayName: Publish Website
+  inputs:
+    command: 'publish'
+    publishWebProjects: true
+    arguments: '--configuration Release --output $(Build.ArtifactStagingDirectory)'
+    zipAfterPublish: false
+
+- task: PublishBuildArtifacts@1
+  displayName: Publish Artifacts
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)/AndrewBabbitt97/AndrewBabbitt97/dist'
+    ArtifactName: 'AndrewBabbitt97'
+    publishLocation: 'Container'
+
+- task: DownloadSecureFile@1
+  displayName: Download Deploy Key
+  name: deployKey
+  inputs:
+    secureFile: 'deploy_key'
+
+- script: |
+    mkdir ~/.ssh
+    mv $(deployKey.secureFilePath) ~/.ssh/id_rsa
+    chmod 700 ~/.ssh
+    chmod 600 ~/.ssh/id_rsa
+    ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
+    git config --global user.name "Azure Pipelines"
+    git config --global user.email "azuredevops@microsoft.com"
+    cd $(Build.ArtifactStagingDirectory)/AndrewBabbitt97/AndrewBabbitt97/dist
+    git init
+    git checkout -b master
+    git add -A
+    git commit -m "Azure DevOps CI/CD Build $(Build.BuildId)"
+    git push -f git@github.com:AndrewBabbitt97/AndrewBabbitt97.github.io.git master
+    rm ~/.ssh/id_rsa
+  displayName: Deploy To GitHub Pages

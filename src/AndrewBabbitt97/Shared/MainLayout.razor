@@ -1,0 +1,23 @@
+﻿@inherits LayoutComponentBase
+@inject IJSRuntime _jsRuntime
+
+<NavMenu />
+
+<div class="container-fluid p-0">
+    <section class="error-section p-3 p-lg-5 d-flex align-items-center" id="blazor-error-ui" style="display: none !important;">
+        <div class="w-100">
+            <h2>Client Error</h2>
+            <div class="subheading mb-3">An unhandled error has occurred</div>
+            <p>Looks like we had an error displaying this page. :( Click <a href="" @onclick="ReloadApp">here</a> to reload.</p>
+        </div>
+    </section>
+    @Body
+</div>
+
+@code
+{
+    private async Task ReloadApp()
+    {
+        await _jsRuntime.InvokeVoidAsync("window.location.reload");
+    }
+}

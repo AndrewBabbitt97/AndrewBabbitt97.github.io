@@ -1,0 +1,47 @@
+﻿@page "/"
+@inject HttpClient _httpClient
+
+@if (_model != null)
+{
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center">
+        <div class="w-100">
+            <h1 class="mb-0">
+                @_model.FirstName
+                <span class="text-primary">@_model.LastName</span>
+            </h1>
+            <div class="subheading mb-5">
+                @_model.City, @_model.State · @_model.PhoneNumber ·
+                <a href="mailto:@_model.EmailAddress">@_model.EmailAddress</a>
+            </div>
+            <p class="lead mb-5">@_model.ShortSummary</p>
+            <div class="social-icons">
+                <a href="@_model.LinkedInAddress" target="_blank">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="@_model.GitHubAddress" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="@_model.TwitterAddress" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="@_model.FacebookAddress" target="_blank">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+}
+else
+{
+    <Loader />
+}
+
+@code
+{
+    private Models.About _model;
+
+    protected override async Task OnInitializedAsync()
+    {
+        _model = await _httpClient.GetJsonAsync<Models.About>("api/about.json");
+    }
+}

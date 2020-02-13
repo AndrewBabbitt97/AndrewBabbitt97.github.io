@@ -1,0 +1,157 @@
+[
+  {
+    "icon": "fab fa-html5",
+    "description": "HTML5",
+    "showDescription": false
+  },
+  {
+    "icon": "fab fa-css3-alt",
+    "description": "CSS3",
+    "showDescription": false
+  },
+  {
+    "icon": "fab fa-js",
+    "description": "Javascript",
+    "showDescription": false
+  },
+  {
+    "icon": "fab fa-bootstrap",
+    "description": "Bootstrap",
+    "showDescription": false
+  },
+  {
+    "icon": "fac fa-csharp",
+    "description": "C#",
+    "showDescription": false
+  },
+  {
+    "icon": "fab fa-php",
+    "description": "PHP",
+    "showDescription": false
+  },
+  {
+    "icon": "fab fa-python",
+    "description": "Python",
+    "showDescription": false
+  },
+  {
+    "icon": "fab fa-java",
+    "description": "Java",
+    "showDescription": false
+  },
+  {
+    "icon": "fab fa-laravel",
+    "description": "Laravel",
+    "showDescription": false
+  },
+  {
+    "icon": "fab fa-wordpress",
+    "description": "Wordpress",
+    "showDescription": false
+  },
+  {
+    "icon": "fac fa-blazor",
+    "description": "Blazor",
+    "showDescription": false
+  },
+  {
+    "icon": "fas fa-database",
+    "description": "SQL",
+    "showDescription": false
+  },
+  {
+    "icon": "fab fa-git-alt",
+    "description": "Git",
+    "showDescription": false
+  },
+  {
+    "icon": "fab fa-jenkins",
+    "description": "Jenkins",
+    "showDescription": false
+  },
+  {
+    "icon": "fab fa-docker",
+    "description": "Docker",
+    "showDescription": false
+  },
+  {
+    "icon": "fac fa-kubernetes",
+    "description": "Kubernetes",
+    "showDescription": false
+  },
+  {
+    "icon": "fac fa-vs",
+    "description": "Visual Studio",
+    "showDescription": false
+  },
+  {
+    "icon": "fab fa-unity",
+    "description": "Unity",
+    "showDescription": false
+  },
+  {
+    "icon": "fab fa-adobe",
+    "description": "Adobe CC",
+    "showDescription": false
+  },
+  {
+    "icon": "fab fa-bitbucket",
+    "description": "Bitbucket",
+    "showDescription": false
+  },
+  {
+    "icon": "fab fa-jira",
+    "description": "Jira",
+    "showDescription": false
+  },
+  {
+    "icon": "fab fa-windows",
+    "description": "Windows",
+    "showDescription": false
+  },
+  {
+    "icon": "fab fa-linux",
+    "description": "Linux",
+    "showDescription": false
+  },
+  {
+    "icon": "fab fa-android",
+    "description": "Android",
+    "showDescription": false
+  },
+  {
+    "icon": "fac fa-azure",
+    "description": "Azure",
+    "showDescription": false
+  },
+  {
+    "icon": "fab fa-cpanel",
+    "description": "cPanel",
+    "showDescription": false
+  },
+  {
+    "icon": "fa-li fas fa-lock",
+    "description": "Security First",
+    "showDescription": true
+  },
+  {
+    "icon": "fa-li fas fa-fast-forward",
+    "description": "Use Agile Methodologies",
+    "showDescription": true
+  },
+  {
+    "icon": "fa-li fas fa-microchip",
+    "description": "Use Current Technologies & Best Practices",
+    "showDescription": true
+  },
+  {
+    "icon": "fa-li fas fa-user-friends",
+    "description": "Cross Functional Teams",
+    "showDescription": true
+  },
+  {
+    "icon": "fa-li fas fa-sync",
+    "description": "Design With Scalability & Sustainability In Mind",
+    "showDescription": true
+  }
+]

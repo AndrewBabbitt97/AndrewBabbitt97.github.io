@@ -1,0 +1,9 @@
+[
+  {
+    "title": "Software Engineer",
+    "employer": "Philips",
+    "startDate": "2018-08-01",
+    "endDateIsPresent": true,
+    "summary": "Modernized many aspects of the companies existing applications. This included migrating applications to cloud based architectures, designing data warehouses, implementing DevOps pipelines, as well as designing APIs, websites, and client side apps."
+  }
+]

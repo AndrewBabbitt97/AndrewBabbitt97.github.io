@@ -1,0 +1,16 @@
+﻿<Router AppAssembly="@typeof(Program).Assembly">
+    <Found Context="routeData">
+        <RouteView RouteData="@routeData" DefaultLayout="@typeof(MainLayout)" />
+    </Found>
+    <NotFound>
+        <LayoutView Layout="@typeof(MainLayout)">
+            <section class="error-section p-3 p-lg-5 d-flex align-items-center">
+                <div class="w-100">
+                    <h2>404</h2>
+                    <div class="subheading mb-3">Not Found</div>
+                    <p>Looks like we couldnt find this page :(</p>
+                </div>
+            </section>
+        </LayoutView>
+    </NotFound>
+</Router>

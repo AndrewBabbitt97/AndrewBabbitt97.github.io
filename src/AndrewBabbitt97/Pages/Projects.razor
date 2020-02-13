@@ -1,0 +1,46 @@
+﻿@page "/projects"
+@inject HttpClient _httpClient
+
+@if (_model != null)
+{
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center">
+        <div class="w-100">
+            <h2 class="mb-5">Projects</h2>
+
+            @foreach (Models.Project project in _model)
+            {
+                <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div>
+                        @if (string.IsNullOrEmpty(project.Url))
+                        {
+                            <h3 class="mb-0">@project.Title</h3>
+                        }
+                        else
+                        {
+                            <h3 class="mb-0"><a href="@project.Url" target="_blank">@project.Title</a></h3>
+                        }
+                        <div class="subheading mb-3">@project.Type</div>
+                        <p>@project.Description</p>
+                    </div>
+                    <div class="resume-date text-md-right">
+                        <span class="text-primary">@project.GetDateRange()</span>
+                    </div>
+                </div>
+            }
+        </div>
+    </section>
+}
+else
+{
+    <Loader />
+}
+
+@code
+{
+    private List<Models.Project> _model;
+
+    protected override async Task OnInitializedAsync()
+    {
+        _model = await _httpClient.GetJsonAsync<List<Models.Project>>("api/projects.json");
+    }
+}

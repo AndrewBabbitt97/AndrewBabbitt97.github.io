@@ -1,0 +1,29 @@
+﻿@page "/interests"
+@inject HttpClient _httpClient
+
+@if (_model != null)
+{
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center">
+        <div class="w-100">
+            <h2 class="mb-5">Interests</h2>
+            @foreach (string interest in _model)
+            {
+                <p>@interest</p>
+            }
+        </div>
+    </section>
+}
+else
+{
+    <Loader />
+}
+
+@code
+{
+    private List<string> _model;
+
+    protected override async Task OnInitializedAsync()
+    {
+        _model = await _httpClient.GetJsonAsync<List<string>>("api/interests.json");
+    }
+}

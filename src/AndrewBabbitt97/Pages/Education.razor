@@ -1,0 +1,43 @@
+﻿@page "/education"
+@inject HttpClient _httpClient
+
+@if (_model != null)
+{
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center">
+        <div class="w-100">
+            <h2 class="mb-5">Education</h2>
+
+            @foreach (Models.Education education in _model)
+            {
+                <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div>
+                        <h3 class="mb-0">@education.School</h3>
+                        <div class="subheading mb-3">@education.CertificateOrDegree</div>
+                        <div>@education.AdditionalInfo</div>
+                        @if (education.Gpa > 0)
+                        {
+                            <p>GPA: @education.Gpa</p>
+                        }
+                    </div>
+                    <div class="resume-date text-md-right">
+                        <span class="text-primary">@education.GetDateRange()</span>
+                    </div>
+                </div>
+            }
+        </div>
+    </section>
+}
+else
+{
+    <Loader />
+}
+
+@code
+{
+    private List<Models.Education> _model;
+
+    protected override async Task OnInitializedAsync()
+    {
+        _model = await _httpClient.GetJsonAsync<List<Models.Education>>("api/education.json");
+    }
+}

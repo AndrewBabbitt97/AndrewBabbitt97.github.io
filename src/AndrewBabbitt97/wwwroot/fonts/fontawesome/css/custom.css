@@ -1,0 +1,45 @@
+.fac {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+}
+
+.fa-csharp:before {
+    content: "\61";
+}
+
+.fa-blazor:before {
+    content: "\62";
+}
+
+.fa-vs:before {
+    content: "\63";
+}
+
+.fa-kubernetes:before {
+    content: "\64";
+}
+
+.fa-azure:before {
+    content: "\65";
+}
+
+@font-face {
+    font-family: 'Font Awesome 5 Custom';
+    font-style: normal;
+    font-weight: 400;
+    font-display: auto;
+    src: url("../webfonts/fa-custom-400.eot");
+    src: url("../webfonts/fa-custom-400.eot?#iefix") format("embedded-opentype"), url("../webfonts/fa-custom-400.woff") format("woff"), url("../webfonts/fa-custom-400.ttf") format("truetype"), url("../webfonts/fa-custom-400.svg#fa-custom-400") format("svg");
+}
+
+.fac {
+    font-family: 'Font Awesome 5 Custom';
+    font-weight: 400;
+    vertical-align: -8%;
+    padding-top: 0.3rem;
+}
