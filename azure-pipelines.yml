@@ -40,7 +40,7 @@ steps:
     ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
     git config --global user.name "Azure Pipelines"
     git config --global user.email "azuredevops@microsoft.com"
-    cd $(Build.ArtifactStagingDirectory)/AndrewBabbitt97/AndrewBabbitt97/dist
+    cd $(Build.ArtifactStagingDirectory)/AndrewBabbitt97/wwwroot
     git init
     git checkout -b master
     git add -A
