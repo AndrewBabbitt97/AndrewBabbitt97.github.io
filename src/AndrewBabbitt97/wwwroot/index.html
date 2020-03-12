@@ -14,10 +14,10 @@
     <title>Andrew Babbitt</title>
 
     <!-- Icons -->
+    <link href="manifest.json" rel="manifest" />
     <link rel="apple-touch-icon" sizes="180x180" href="img/icons/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="img/icons/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="img/icons/favicon-16x16.png" />
-    <link rel="manifest" href="manifest.json" />
     <link rel="mask-icon" href="img/icons/safari-pinned-tab.svg" />
     <link rel="shortcut icon" href="favicon.ico" />
     <meta name="msapplication-TileColor" content="#da532c" />
@@ -81,8 +81,8 @@
     </script>
 
     <script src="js/site.js"></script>
-    <script src="js/pwa.js"></script>
     <script src="_framework/blazor.webassembly.js"></script>
+    <script>navigator.serviceWorker.register('service-worker.js');</script>
 </body>
 
 </html>
