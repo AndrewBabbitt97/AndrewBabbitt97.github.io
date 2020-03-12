@@ -1,9 +1,17 @@
 [
   {
+    "title": "Kubernetes Solutions Architect",
+    "employer": "Recro",
+    "startDate": "2020-02-25",
+    "endDateIsPresent": true,
+    "summary": "I will be deploying applications, testing, and creating solutions to various problems around Kubernetes using DevSecOps approaches."
+  },
+  {
     "title": "Software Engineer",
     "employer": "Philips",
     "startDate": "2018-08-01",
-    "endDateIsPresent": true,
+    "endDate": "2020-02-24",
+    "endDateIsPresent": false,
     "summary": "Modernized many aspects of the companies existing applications. This included migrating applications to cloud based architectures, designing data warehouses, implementing DevOps pipelines, as well as designing APIs, websites, and client side apps."
   }
 ]
