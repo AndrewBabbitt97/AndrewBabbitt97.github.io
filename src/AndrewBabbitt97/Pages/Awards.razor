@@ -29,6 +29,6 @@ else
 
     protected override async Task OnInitializedAsync()
     {
-        _model = await _httpClient.GetJsonAsync<List<Models.Award>>("api/awards.json");
+        _model = await _httpClient.GetFromJsonAsync<List<Models.Award>>("api/awards.json");
     }
 }

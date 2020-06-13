@@ -38,6 +38,6 @@ else
 
     protected override async Task OnInitializedAsync()
     {
-        _model = await _httpClient.GetJsonAsync<List<Models.Education>>("api/education.json");
+        _model = await _httpClient.GetFromJsonAsync<List<Models.Education>>("api/education.json");
     }
 }
