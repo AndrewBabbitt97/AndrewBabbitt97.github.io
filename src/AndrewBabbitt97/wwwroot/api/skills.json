@@ -40,6 +40,11 @@
     "showDescription": false
   },
   {
+    "icon": "fab fa-golang",
+    "description": "Go",
+    "showDescription": false
+  },
+  {
     "icon": "fab fa-laravel",
     "description": "Laravel",
     "showDescription": false
@@ -77,6 +82,11 @@
   {
     "icon": "fac fa-kubernetes",
     "description": "Kubernetes",
+    "showDescription": false
+  },
+  {
+    "icon": "fac fa-istio",
+    "description": "Istio",
     "showDescription": false
   },
   {
@@ -122,6 +132,11 @@
   {
     "icon": "fac fa-azure",
     "description": "Azure",
+    "showDescription": false
+  },
+  {
+    "icon": "fac fa-aws",
+    "description": "AWS",
     "showDescription": false
   },
   {

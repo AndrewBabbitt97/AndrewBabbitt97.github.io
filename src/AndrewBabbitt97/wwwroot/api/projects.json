@@ -1,17 +1,18 @@
 [
   {
-    "title": "Shadows of Twilight",
-    "type": "Video Game",
-    "startDate": "2018-11-28",
+    "title": "authservice",
+    "type": "Istio Extension",
+    "startDate": "2020-06-09",
     "endDateIsPresent": true,
-    "description": "Shadows of Twilight is a hobby video game I am working on. It is being designed with Unity, ASP.NET, Blazor, and Kubernetes. This is a private project, due to this; source code is not available."
+    "description": "Authservice is an implementation of the Envoy external authorization API. I have contributed bug fixes and support with various issues throughout the project.",
+    "url": "https://github.com/istio-ecosystem/authservice"
   },
   {
     "title": "Chroma Control",
     "type": "Razer Synapse Extension",
     "startDate": "2019-11-26",
     "endDateIsPresent": true,
-    "description": "Chroma Control is a set of modules that can be installed onto a PC using Razer Synapse to allow you to control hardware from 3rd parties. This project uses .NET Core 3.0, ASP.NET worker services, and RGBKit. The goal was to keep this project simple and utalize RGBKit for most of the heavy work.",
+    "description": "Chroma Control is a set of modules that can be installed onto a PC using Razer Synapse to allow you to control hardware from 3rd parties. This project uses .NET Core 3.0, ASP.NET worker services, and RGBKit. The goal was to keep this project simple and utilize RGBKit for most of the heavy work.",
     "url": "https://github.com/ChromaControl/ChromaControl"
   },
   {
@@ -27,8 +28,15 @@
     "type": "Razer Synapse Extension",
     "startDate": "2019-09-15",
     "endDateIsPresent": true,
-    "description": "Aura connect is a project that set out to allow you to control ASUS Aura devices from Razer Synapse. It uses .NET Core 3.0 and ASP.Net worker services. This project attracted the attention of Razer's CEO Min-Liang Tan with praise for extending the Chroma ecosystem.",
+    "description": "Aura connect is a project that sets out to allow you to control ASUS Aura devices from Razer Synapse. It uses .NET Core 3.0 and ASP.Net worker services. This project attracted the attention of Razer's CEO Min-Liang Tan with praise for extending the Chroma ecosystem.",
     "url": "https://github.com/AndrewBabbitt97/AuraConnect"
+  },
+  {
+    "title": "Shadows of Twilight",
+    "type": "Video Game",
+    "startDate": "2018-11-28",
+    "endDateIsPresent": true,
+    "description": "Shadows of Twilight is a hobby video game I am working on. It is being designed with Unity, ASP.NET, Blazor, and Kubernetes. This is a private project, due to this; source code is not available."
   },
   {
     "title": "Danbooru",
@@ -72,7 +80,7 @@
     "startDate": "2013-03-01",
     "endDate": "2016-06-01",
     "endDateIsPresent": false,
-    "description": "Dirty Unicorns is a fork of AOSP (Android Open Source Project). This is a distribution of Android that has been around for a very long time, the languages and tools used are very extensive. I helped in debugging and tracking issues, on occasion submitting code to fix issues when i found any. For a while I helped the community by providing weekly builds out of a Jenkins instance hosted in Azure.",
+    "description": "Dirty Unicorns is a fork of AOSP (Android Open Source Project). This is a distribution of Android that has been around for a very long time, the languages and tools used are very extensive. I helped in debugging and tracking issues, on occasion submitting code to fix issues when I found any. For a while I helped the community by providing weekly builds out of a Jenkins instance hosted in Azure.",
     "url": "https://dirtyunicorns.com/"
   }
 ]
