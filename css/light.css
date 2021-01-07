@@ -1,0 +1,18 @@
+﻿body {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #1e1e1e;
+}
+
+.social-icons a {
+    background-color: #000000;
+    color: #ffffff !important;
+}
+
+.resume-tooltip .resume-tooltiptext {
+    background-color: #000000;
+    color: #ffffff;
+}

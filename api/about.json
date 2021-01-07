@@ -1,0 +1,13 @@
+{
+  "firstName": "Andrew",
+  "lastName": "Babbitt",
+  "city": "Colorado Springs",
+  "state": "CO",
+  "phoneNumber": "(719) 308-0954",
+  "emailAddress": "andrew.babbitt@outlook.com",
+  "linkedInAddress": "https://www.linkedin.com/in/andrew-babbitt-7a9136186/",
+  "githubAddress": "https://github.com/sponsors/AndrewBabbitt97",
+  "twitterAddress": "https://twitter.com/andrewbabbitt97",
+  "facebookAddress": "https://www.facebook.com/andrew.babbitt.5",
+  "shortSummary": "I'm a Software engineer of 7 years, an active contributor and maintainer of open source projects, and have deployed and maintained critical software solutions for Fortune 500 companies within regulated industries. My goal is always to develop scalable, sustainable, and modern solutions to problems using the latest technology available to us."
+}

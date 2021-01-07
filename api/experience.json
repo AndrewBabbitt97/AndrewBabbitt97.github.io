@@ -1,0 +1,17 @@
+[
+  {
+    "title": "Kubernetes Solutions Architect",
+    "employer": "Recro",
+    "startDate": "2020-02-25",
+    "endDateIsPresent": true,
+    "summary": "At Recro I am currently focused on developing solutions for Platform One revolving around Kubernetes and the greater CNCF ecosystem. This involves everything from deploying and debugging issues with Istio, finding ways to handle authentication and security within the service mesh differently, developing operators, and tackling the hardest workloads to run on Kubernetes."
+  },
+  {
+    "title": "Software Engineer",
+    "employer": "Philips",
+    "startDate": "2018-08-01",
+    "endDate": "2020-02-24",
+    "endDateIsPresent": false,
+    "summary": "At Philips I was under the IGTD (Image Guided Therapy Devices) division of the company focusing on modernizing many systems they used and coming up with solutions for employees to be more productive and think differently about the way we use technology. This involved everything from moving systems to Azure, creating solutions to analyzing data across all the machines used to manufacture and test products, and administrating critical systems."
+  }
+]
